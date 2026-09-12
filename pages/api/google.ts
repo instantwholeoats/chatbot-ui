@@ -63,7 +63,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
           const doc = dom.window.document;
           const parsed = new Readability(doc).parse();
 
-          if (parsed) {
+          if (parsed?.textContent) {
             let sourceText = cleanSourceText(parsed.textContent);
 
             return {

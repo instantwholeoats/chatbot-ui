@@ -103,3 +103,7 @@ If you don't have an OpenAI API key, you can get one [here](https://platform.ope
 If you have any questions, feel free to reach out to Mckay on [Twitter](https://twitter.com/mckaywrigley).
 
 [GCSE]: https://developers.google.com/custom-search/v1/overview
+
+## Dependency maintenance
+
+This fork requires Node.js 22.12 or later and npm 11.19.1. Run `npm ci --ignore-scripts`, `npm test`, `npm run coverage`, `npm run build`, and `npm audit` before upgrading dependencies. The scoped PostCSS override keeps Next.js 15 on a patched PostCSS 8 release.
